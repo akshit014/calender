@@ -1,0 +1,90 @@
+CALENDER
+STYLE.CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    background: #b4436c;
+    font-family:'poppins' , 'san-serif';
+    box-sizing: border-box;
+}
+#hero{
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calender{
+    margin-top: 200px;
+    margin-left: 465px;
+    width: 300px;
+    height: 250px;
+    
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.left , .right{
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.right{
+    width: 40%;
+    background: orangered;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px ;
+
+}
+.left{
+    width: 60%;
+   background-color: antiquewhite;
+}
+.left .p{
+    color: black;
+
+}
+
+
+INDEX.HTML
+
+
+
+ <div class="hero">
+        <div  class="calender">
+           <div class="left">      
+                <p id="date">01</p>
+            <p id="day">sunday</p>
+            </div>
+            <div class="right">
+                <p id="month">january</p>
+                <p id="year">2024</p>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="script.js" ></script>
+
+
+SCRIPT.JS
+
+
+const date= document.getElementById('date')
+const day= document.getElementById('day')
+const year= document.getElementById('year')
+const month= document.getElementById('month')
+
+const today =new Date();
+
+console.log(today)
+
+
+
+
